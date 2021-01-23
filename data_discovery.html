@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Vhere - A conversation based recommender for data discovery and exploration Submission for NASA SpaceApps Challenge 2020 During the past few decades, the availability of cheap computers, nano...">
+        <meta name="keywords" content="nasa">
+        <link rel="icon" href="/favicon.ico">
+        <!-- Canonical -->
+        <link rel="canonical" href="/data_discovery.html">
+        <!-- /Canonical -->
+
+        <title>Vhere - Explore and discover space datasets from NASA and CSA - Gowri's Blog</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/spaceapps_header.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/g.jpg" alt="logo">Gowri's Blog</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="/">Homepage</a>
+                                <a href="/categories.html">Categories</a>
+                            <a  href="/pages/about-me.html">About me</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Vhere - Explore and discover space datasets from NASA and CSA</h1>
+                      <p class="header-date"> <a href="/author/gowri.html">Gowri</a>, Thu 21 January 2021,  <a href="/category/space.html">Space</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/nasa.html">nasa</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 style="text-align: left;"> Vhere - A conversation based recommender for data discovery and exploration
+ </h2><h4 style="text-align: left;"> Submission for NASA SpaceApps Challenge 2020
+ </h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>During the past few decades, the availability of cheap computers, nano satellites and innovative telescopes have led to a treasure trove of data and information in the field of astronomy and earth sciences. Even though such a vast amount of data is available, it is often not well-structured or standardized. This makes it difficult to not only explore but also discover relevant datasets especially for amateur scientists and enthusiasts in turn creating an entry barrier for those interested in scientific data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="../images/information_overload.jpg" style="width:300px;margin-right:20px;float:left;">
+
+There are thousands of interesting space datasets across NASA, CSA, etc. It is extremely tedious for a person to explore the datasets and discover interesting ones unless he possesses relevant domain knowledge.
+<br><br>
+
+One of the approaches used in data discovery is by using keyword matches and searching based on titles. However, in the real world, data is messy and is not tagged correctly thus reducing the efficiency of these approaches. Also, dataset titles do not convey enough information to decide if they are relevant, and reading through descriptions is hard and time consuming.
+
+</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="../images/ink.png" style="width:350px;margin-right:20px;float:right;">
+    <br>
+
+To solve this problem, we built Vhere - A recommender that not only reads and understands dataset descriptions but allows searching them with a simple non-technical natural language query. 
+<br><br>
+
+For eg. if a user asks "I want to know more about Earth's atmosphere and geography", Vhere will magically (with some science too!) match the query with the description, title and metadata of all the datasets across all the sources and find the most relevant results.
+<br><br>
+
+This provides a single access point to all datasets from various data sources (NASA, CSA, JAXA etc). Also, this approach supports matches that are close to the query words even if the user does not know the exact scientific term to describe the data.
+<br>
+</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 style="text-align: left;"> System Architecture</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I"ll now describe the internal architecture of the recommender I built to trawl through the datasets of NASA and recommend relevant ones to the user.</p>
+<p>On the server side, I aggregate all datasets across different sources(CSA, NASA etc.) and create an NLP model to extract their features based on title and description and other metadata.</p>
+<p>Instead of just matching keywords, I extract semantic information from metadata using NLP techniques like lemmatization, tf-idf matching and cosine similarity. I then created an indexed machine learning model that contains information on all available datasets.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="center">
+  <img src="../images/arcitecture.png" style="width:450px;">
+</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>On the client side, the user can input queries using natural language as if carrying a conversation. Query the recommender like "I want to know more about Earth's atmosphere and geography" or "I want data about Mars missions and climate" or "How did the universe begin? What are the earliest stars?"</p>
+<p>The output is a list of datasets that contain earth data most closely matching the query.The user can further refine their query after looking at the datasets which allows for more focused matches.</p>
+<p>The query "I want to know more about Earth's atmosphere and geography" leads to the following recommdations from Vhere.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="left">
+  <img src="../images/reco_result.png" style="width:800px;">
+</p>
+</div>
+</div>
+</div>
+ 
+
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://github.com/mangalagb" target="_blank">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/mangalagowri/" target="_blank">Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>
